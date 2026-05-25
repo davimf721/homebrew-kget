@@ -2,16 +2,11 @@ class Kget < Formula
   desc "Fast, modern download manager and Rust library — HTTP/HTTPS, FTP/SFTP, WebDAV, torrent, yt-dlp"
   homepage "https://github.com/davimf721/KGet"
   url "https://github.com/davimf721/KGet/archive/refs/tags/v1.7.0.tar.gz"
-  sha256 "98f5c79b2ee640babf9fd6320b08243a1a4ca8e7fa2ea0df181963ccc6857f3f" # updated automatically by release.sh
+  sha256 "98f5c79b2ee640babf9fd6320b08243a1a4ca8e7fa2ea0df181963ccc6857f3f"
   license "MIT"
   head "https://github.com/davimf721/KGet.git", branch: "main"
 
-  bottle do
-    root_url "https://github.com/davimf721/KGet/releases/download/v1.7.0"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "PLACEHOLDER"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "PLACEHOLDER"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "PLACEHOLDER"
-  end
+  bottle :unbuilt
 
   depends_on "rust" => :build
 
