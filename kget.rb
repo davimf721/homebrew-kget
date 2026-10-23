@@ -1,8 +1,8 @@
 class Kget < Formula
   desc "Fast, modern download manager and Rust library — HTTP/HTTPS, FTP/SFTP, WebDAV, torrent, yt-dlp"
   homepage "https://github.com/davimf721/KGet"
-  url "https://github.com/davimf721/KGet/archive/refs/tags/v1.7.1.tar.gz"
-  sha256 "d148c8a9a169d563fd9da26d2b24bf847b4e73cf457218dc4049e2ce7913d7a4" # updated automatically by the Release workflow
+  url "https://github.com/davimf721/KGet/archive/refs/tags/v1.8.0.tar.gz"
+  sha256 "898a8acf4e0f3c607279cef7e35ea2c3cc08043ce5d23c10fb8fe0038adc9c91" # updated automatically by the Release workflow
   license "MIT"
   head "https://github.com/davimf721/KGet.git", branch: "main"
 
